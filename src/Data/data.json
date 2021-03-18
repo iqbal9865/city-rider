@@ -1,0 +1,17 @@
+[{
+    "name": "bike",
+    "img": "https://imgd.aeplcdn.com/310x174/bw/models/yamaha-xsr155-standard20190819142450.jpg?q=75",
+    "id": 1
+  }, {
+    "name": "car",
+    "img": "https://auto1-homepage.prod.mp.auto1.cloud/static/optimized/blue-car-hp-left-bmw.png",
+    "id": 2
+  }, {
+    "name": "bus",
+    "img": "https://lh3.googleusercontent.com/proxy/nctBneBr371TvF8xWwezq_mUOKH3gsnC9aRzFAelWMhVgD2tk3ltDGe4zJy7X357Vi3rQ0vGYVfVqBjdoUuMqspUzz9PpKXrkQD4aaCMcUmFHjW2cuAlzFhVPlZ1",
+    "id": 3
+  }, {
+    "name": "train",
+    "img": "https://news.railanalysis.com/wp-content/uploads/2018/10/gg-678x381.jpg",
+    "id": 4
+  }]
