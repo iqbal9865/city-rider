@@ -1,6 +1,6 @@
 .login-form{
     
-    margin: 50px 450px;
+    margin: 10px 450px;
 }
 .login-form input{
     display: block;
@@ -11,7 +11,4 @@
 }
 .error{
     color: red;
-}
-.forms{
-    
 }
