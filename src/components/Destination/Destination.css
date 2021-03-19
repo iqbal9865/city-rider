@@ -1,0 +1,10 @@
+input{
+    width: 255px
+}
+.one-third{
+    width: 30%;
+    height: 200px;
+}
+.two-third{
+    width: 65%;
+}

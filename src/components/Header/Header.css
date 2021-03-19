@@ -1,12 +1,10 @@
-.nav{
-    /* margin-right: 100px; */
-}
-.nav li{
+
+nav li{
     margin: 23px;
     list-style: none;
     display: inline;
 }
-.nav li a{
+nav li a{
     text-decoration: none;
     color: black;
     font-weight: 700;

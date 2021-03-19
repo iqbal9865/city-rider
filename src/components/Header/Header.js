@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { UserContext } from '../../App';
 import './Header.css'
 const Header = () => {
+    const [logInUser, setLogInUser] = useContext(UserContext);
     return (
-        <div className='container nav w-100 justify-content-end'>
+        <nav className='container nav w-100 justify-content-end'>
             <ul className='w-50'>
                 <h3>CITY RIDERS</h3>
             </ul>
@@ -22,10 +24,11 @@ const Header = () => {
                     <Link to=''>Contact</Link>
                 </li>
                 <li>
-                    <Link to='/login'><button className='btn btn-danger'>Login</button></Link>
+                    {logInUser.email ? <p style={{color: 'green'}}>{logInUser.name}</p> : 
+                    <Link to='/login'><button className='btn btn-danger'>Login</button></Link>}
                 </li>
             </ul>
-        </div>
+        </nav>
     );
 };
 
