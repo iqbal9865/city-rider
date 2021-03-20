@@ -8,4 +8,4 @@ The Website is about city ride share, all right reserved to iqbal ahmed.
 * google map integrates
 
 ## Live Site
-[City Rider](http://localhost:3000/)
+[City Rider](https://city-riders-752aa.web.app/)
