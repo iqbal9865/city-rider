@@ -33,6 +33,7 @@ const Login = () => {
   .then((result) => {
     var credential = result.credential;
     var token = credential.accessToken;
+    console.log(token)
     // var user = result.user;
     const {displayName, email} = result.user;
     const signedInUser = {name: displayName, email}
@@ -42,6 +43,7 @@ const Login = () => {
   }).catch((error) => {
     var errorCode = error.code;
     var errorMessage = error.message;
+    console.log(errorMessage,errorCode)
   });
     }
 
