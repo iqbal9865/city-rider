@@ -24,7 +24,7 @@ const Header = () => {
                     <Link to=''>Contact</Link>
                 </li>
                 <li>
-                    {logInUser.email ? <p style={{color: 'green'}}>{logInUser.name}</p> : 
+                    {logInUser.email ? <strong style={{color: 'green',textDecoder: 'underline'}}>{logInUser.email}</strong> : 
                     <Link to='/login'><button className='btn btn-danger'>Login</button></Link>}
                 </li>
             </ul>

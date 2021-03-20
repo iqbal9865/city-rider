@@ -1,17 +1,25 @@
 [{
     "name": "bike",
     "img": "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8YmlrZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80",
-    "id": 1
+    "id": 1,
+    "people": 2,
+    "price": 70
   }, {
     "name": "car",
     "img": "https://cdn.luxe.digital/media/2020/12/16175821/most-expensive-cars-2021-Maserati-MC20-luxe-digital%402x.jpg",
-    "id": 2
+    "id": 2,
+    "people": 5,
+    "price": 67
   }, {
     "name": "bus",
     "img": "https://www.sustainable-bus.com/wp-content/uploads/2019/12/scania-bus4.jpg",
-    "id": 3
+    "id": 3,
+    "people": 25,
+    "price": 50
   }, {
     "name": "train",
     "img": "https://news.railanalysis.com/wp-content/uploads/2018/10/gg-678x381.jpg",
-    "id": 4
+    "id": 4,
+    "people": 100,
+    "price": 30
   }]
