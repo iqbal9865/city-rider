@@ -62,7 +62,7 @@ const Destination = () => {
               
             
             <div className='col-sm-6 col-lg-12 two-third'>
-                {/* <img className='img-fluid'  src={map} alt=""/> */}
+               <h5>Google Map Here</h5>
                 <GoogleMaps
                   apiKey={"AIzaSyDxROgMA9-LwBwLdzkgaKtITC9r-_g3kz4"}
                   style={{height: "400px", width: "100%"}}
