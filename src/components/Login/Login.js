@@ -26,8 +26,6 @@ const Login = () => {
         error: '',
         success: false
     })
-
-    
     const handleGoogleSignIn = () => {
     var GoogleProvider = new firebase.auth.GoogleAuthProvider();
     firebase.auth()
@@ -58,7 +56,7 @@ const Login = () => {
                 newUserInfo.error = '';
                 newUserInfo.success = true;
                 setUser(newUserInfo)
-                setLogInUser(newUserInfo)
+                // setLogInUser(newUserInfo)
                 history.replace(from);
                 updateUserInfo(user.name)
                 // var user = res.user;     

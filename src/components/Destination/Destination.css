@@ -1,10 +1,27 @@
 input{
-    width: 255px
+    width:350px
+    
 }
+.sub{
+    background-color: orange
+}
+
 .one-third{
     width: 30%;
     height: 200px;
+    background-color: lightgray;
+    /* width: '300px', */
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 100px
 }
 .two-third{
-    width: 65%;
+    width: 50%;
+    margin: 0 0px;
+    justify-content: center;
+}
+.two-third img{
+    width: 550px;
+    justify-content: center;
 }
