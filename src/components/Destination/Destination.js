@@ -37,24 +37,36 @@ const Destination = () => {
     
     return (
         <div className='row full-wid'>
-            <div className='col-sm-6 col-lg-12 one-third my-5'>
-              {show?<form  onSubmit={()=>onSubmits}>  
+            <div style={{ height:'240px'}} className='col-sm-6 col-lg-12 one-third my-5'>
+              {show?<form className='mt-3' onSubmit={()=>onSubmits}>  
                  <label style={{display:'block'}} htmlFor="id">Pick From</label>
                 <input onChange={inputEvent} value={location} required id='from' type="text"/>
                  <label style={{display:'block'}} htmlFor="id">Pick To</label>
                 <input value={Dest} onChange={inputEventTwo} required className='mb-3' id='from' type="text"/>
                 <input onClick={()=>setShow(!show)} type="submit" className='sub' value="Search"/>
               </form>: null}
+
               {show ? null:
               <div style={{color: 'black', backgroundColor: 'orange',padding: '10px',borderRadius: '10px'}} className='destination'>
                 <h5>from: {presentLoc}  Mirpur</h5> 
                 <h5>To: {destinations} Dhanmondi</h5>
-                <img style={{width: '80px',height: '75px',borderRadius:'10px'}} src={img} alt=""/>
+                <div>
+                <img style={{width: '50px',height: '55px',borderRadius:'10px'}} src={img} alt=""/>
                 <strong className='mx-3'>{name}</strong>
                 
                 <FontAwesomeIcon icon={faUsers} />
-                <strong className='mr-3'>{people}</strong>
+                <strong className='mx-1'>{people}</strong>
                 <strong className='mx-3'>${price}</strong>
+                </div>
+              
+                <div className='mt-2'>
+                <img style={{width: '50px',height: '55px',borderRadius:'10px'}} src={img} alt=""/>
+                <strong className='mx-3'>{name}</strong>
+                
+                <FontAwesomeIcon icon={faUsers} />
+                <strong className='mx-1'>{people}</strong>
+                <strong className='mx-3'>${price}</strong>
+                </div>
               </div>
               }
                

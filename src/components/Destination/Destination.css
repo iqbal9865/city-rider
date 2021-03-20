@@ -1,6 +1,7 @@
 input{
-    width:350px
-    
+    width:350px;
+    height: 35px;
+    border-radius: 5px
 }
 .sub{
     background-color: orange
@@ -8,7 +9,7 @@ input{
 
 .one-third{
     width: 30%;
-    height: 200px;
+    
     background-color: lightgray;
     /* width: '300px', */
     margin: 20px;
@@ -24,4 +25,28 @@ input{
 .two-third img{
     width: 550px;
     justify-content: center;
+    margin-bottom: 15px;
+}
+@media screen and (max-width: 768px){
+    .one-third{
+        background-color: white;
+        margin: 0 60px;
+    }
+    .two-third{
+        margin: 0 80px
+    }
+    .two-third{
+        width: 350px;
+    }
+    .sub{
+        background-color:orangered;
+    }
+    
+    .destination{
+        margin:0;
+        padding:0;
+        background-color: orangered;
+        height:200px;
+        width:360px
+    }
 }

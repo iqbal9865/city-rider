@@ -135,9 +135,8 @@ const Login = () => {
                 {errors.email && <span className='error'>email is required</span>}
 
                 <input name="password" onBlur={handleInputChange} required placeholder='Enter Your Password' defaultValue="" ref={register} />
-                {errors.password && <span className='error'>password is required</span>}
-
-                {newUser && <input name="confirmPassword" onBlur={handleInputChange} placeholder='Confirm Password' defaultValue="" ref={register} />}
+                {errors.password && <span className='error'>password is required</span>}                
+                {newUser && <input name="confirmPassword" required onBlur={handleInputChange} placeholder='Confirm Password' defaultValue="" ref={register} />}
                 {errors.confirmPassword && <span className='error'>Confirm Password will be same</span>}
 
                 <input style={{backgroundColor: 'orange'}} type="submit" value={newUser?'Sign Up': 'Login'} />
@@ -146,14 +145,14 @@ const Login = () => {
                 <p style={{cursor: 'pointer',margin: '0px 130px', textDecoration:'underline', color: 'blue' }} onClick={ createNewUser }>create new account</p></span> }
 
                 {newUser && <span style={{margin: '10px 115px'}}>Already Have An Account?
-                <p style={{cursor: 'pointer',margin: '0px 180px', textDecoration:'underline', color: 'blue' }} onClick={ createNewUser }>login</p></span>}
+                <strong style={{cursor: 'pointer',margin: '0px 180px', textDecoration:'underline', color: 'blue' }} onClick={ createNewUser }>Login</strong></span>}
 
             </form>
             <p style={{color: 'red'}}>{user.error}</p>
             {user.success && <p style={{color: 'green'}}>user {newUser?' created ' : 'logged In '} successfully</p>}
             </div>
             <div>
-                <button onClick={handleGoogleSignIn} style={{margin: '0 110px',backgroundColor:'orange',  borderRadius: '3px', height: '30px'}}>Continue With Google</button>
+                <button onClick={handleGoogleSignIn} style={{margin: '0 110px',backgroundColor:'orange', border: 'none',  borderRadius: '5px', height: '35px'}}>  Continue With Google</button>
             </div>
         </div>
     );

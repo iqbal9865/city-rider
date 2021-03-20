@@ -9,3 +9,17 @@ nav li a{
     color: black;
     font-weight: 700;
 }
+@media screen and (max-width: 768px){   
+   ul{
+       margin: 0 120px;
+       width: 100%;
+       display: flex;
+       justify-content:center
+   }
+   nav li{
+       margin: 08px;
+   }
+   .logo h3{
+       font-size:25px
+   }
+}

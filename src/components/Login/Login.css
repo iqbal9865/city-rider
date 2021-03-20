@@ -12,3 +12,8 @@
 .error{
     color: red;
 }
+@media screen and (max-width: 600px){
+    .login-form{
+        margin: 10px 50px;
+    }
+}
