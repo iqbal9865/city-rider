@@ -12,7 +12,7 @@ const Home = () => {
    },[])
  
     return (
-        <div className='row full-body mt-5 full-body'>
+        <div className='row full-body mt-5'>
            {
                data.map(dt=> <Transport key={dt.id} dt={dt}></Transport>)
                
