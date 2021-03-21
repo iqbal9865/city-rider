@@ -12,6 +12,7 @@ import Home from './components/Home/Home';
 import Login from './components/Login/Login';
 import Destination from './components/Destination/Destination';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import StaticDestination from './components/StaticDestination/StaticDestination';
 
 export const UserContext = createContext()
 
@@ -31,6 +32,9 @@ function App(props) {
           <PrivateRoute path='/destination/:name'>
             <Destination/>
           </PrivateRoute>
+          <Route exact path='/destination'>
+            <StaticDestination/>
+          </Route>
           <Route exact path='/'>
             <Home/>
           </Route>

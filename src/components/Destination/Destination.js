@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
-import map from '../../images/Map.png'
-// import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
+// import map from '../../images/Map.png'
 import './Destination.css'
 import data from '../../Data/data.json'
 import GoogleMaps from "simple-react-google-maps"
@@ -40,18 +39,18 @@ const Destination = () => {
             <div style={{ height:'240px'}} className='col-sm-6 col-lg-12 one-third my-5'>
               {show?<form className='mt-3' onSubmit={()=>onSubmits}>  
                  <label style={{display:'block'}} htmlFor="id">Pick From</label>
-                <input onChange={inputEvent} value={location} required id='from' type="text"/>
+                <input required onChange={inputEvent} value={location}  id='from'  type="text"/>
                  <label style={{display:'block'}} htmlFor="id">Pick To</label>
-                <input value={Dest} onChange={inputEventTwo} required className='mb-3' id='from' type="text"/>
+                <input required value={Dest} onChange={inputEventTwo}  className='mb-3'  id='to' type="text"/>
                 <input onClick={()=>setShow(!show)} type="submit" className='sub' value="Search"/>
               </form>: null}
 
-              {show ? null:
+              {show ? null :
               <div style={{color: 'black', backgroundColor: 'orange',padding: '10px',borderRadius: '10px'}} className='destination'>
-                <h5>from: {presentLoc}  Mirpur</h5> 
-                <h5>To: {destinations} Dhanmondi</h5>
+                <h5>from: {location} </h5> 
+                <h5>To: {Dest}</h5>
                 <div>
-                <img style={{width: '50px',height: '55px',borderRadius:'10px'}} src={img} alt=""/>
+                <img style={{width: '70px',height: '55px',borderRadius:'07px'}} src={img} alt=""/>
                 <strong className='mx-3'>{name}</strong>
                 
                 <FontAwesomeIcon icon={faUsers} />
@@ -60,7 +59,7 @@ const Destination = () => {
                 </div>
               
                 <div className='mt-2'>
-                <img style={{width: '50px',height: '55px',borderRadius:'10px'}} src={img} alt=""/>
+                <img style={{width: '70px',height: '55px',borderRadius:'07px'}} src={img} alt=""/>
                 <strong className='mx-3'>{name}</strong>
                 
                 <FontAwesomeIcon icon={faUsers} />
@@ -70,8 +69,7 @@ const Destination = () => {
               </div>
               }
                
-              </div>
-              
+              </div>   
             
             <div className='col-sm-6 col-lg-12 two-third'>
                <h5>Google Map Here</h5>
@@ -87,5 +85,4 @@ const Destination = () => {
         </div>
     );
 };
-
 export default Destination;

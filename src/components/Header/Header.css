@@ -11,7 +11,7 @@ nav li a{
 }
 @media screen and (max-width: 768px){   
    ul{
-       margin: 0 120px;
+       margin: 0 125px;
        width: 100%;
        display: flex;
        justify-content:center

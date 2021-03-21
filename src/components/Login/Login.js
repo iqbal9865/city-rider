@@ -152,7 +152,7 @@ const Login = () => {
             {user.success && <p style={{color: 'green'}}>user {newUser?' created ' : 'logged In '} successfully</p>}
             </div>
             <div>
-                <button onClick={handleGoogleSignIn} style={{margin: '0 110px',backgroundColor:'orange', border: 'none',  borderRadius: '5px', height: '35px'}}>  Continue With Google</button>
+                <button onClick={handleGoogleSignIn} style={{margin: '0 110px',backgroundColor:'orange', border: 'none',  borderRadius: '2px', height: '35px'}}>  Continue With Google</button>
             </div>
         </div>
     );
