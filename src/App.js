@@ -32,9 +32,9 @@ function App(props) {
           <PrivateRoute path='/destination/:name'>
             <Destination/>
           </PrivateRoute>
-          <Route exact path='/destination'>
+          <PrivateRoute exact path='/destination'>
             <StaticDestination/>
-          </Route>
+          </PrivateRoute>
           <Route exact path='/'>
             <Home/>
           </Route>
